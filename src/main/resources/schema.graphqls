@@ -1,0 +1,21 @@
+type Book {
+    title: String!
+    isbn: String!
+}
+
+input BookInput {
+    title: String!
+    isbn: String!
+}
+
+type Query {
+    getAllBooks: [Book!]
+    getBookByIsbn(isbn: String!): Book
+}
+
+type Mutation {
+    insertBook(book: BookInput!): Book
+    deleteBook(isbn: String!): Book
+    updateBook(isbn: String!, title: String!): Book
+}
+
