@@ -36,7 +36,7 @@ Run GraphiQL in `localhost:8080/graphiql`.
     }
   }  
   ```
-- getBookByIsbn
+- __getBookByIsbn__
   ```graphql
   query getBookByIsbn($isbn: String!) {
     getBookByIsbn(isbn: $isbn){
@@ -51,7 +51,7 @@ Run GraphiQL in `localhost:8080/graphiql`.
     "isbn": "12345"
   }  
   ```
-- getAllBooks
+- __getAllBooks__
   ```graphql
   query getAllBooks {
     getAllBooks {
@@ -60,7 +60,7 @@ Run GraphiQL in `localhost:8080/graphiql`.
     }
   }
   ```
-- updateBook
+- __updateBook__
   ```graphql
   mutation updateBook($isbn: String!, $title: String!) {
     updateBook(isbn: $isbn, title: $title){
@@ -76,7 +76,7 @@ Run GraphiQL in `localhost:8080/graphiql`.
     "title": "See you!"
   }  
   ```
-- deleteBook
+- __deleteBook__
   ```graphql
   mutation deleteBook($isbn: String!){
     deleteBook(isbn: $isbn){
